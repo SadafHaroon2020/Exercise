@@ -1,0 +1,211 @@
+            * {
+                box-sizing: border-box;
+                margin: 0;
+            }
+            
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            body::after {
+                content: "";
+                background: url('images/background.jpg');
+                opacity: 0.5;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                z-index: -10;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .header {
+                padding: 30px;
+                text-align: center;
+            }
+            
+            .nav {
+                padding-bottom: 20px;
+                font-weight: bold;
+                text-align: center;
+                font-style: italic;
+                font-size: 26px;
+                font-size: 2em;
+                color: rgb(240, 108, 14);
+            }
+            
+            .items {
+                margin-left: 20px;
+                padding-left: 40px;
+                font-weight: bold;
+                text-align: end;
+                font-size: 16px;
+                font-style: italic;
+                color: rgb(12, 11, 11);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            /* Container for flexboxes */
+            
+            .row {
+                display: -webkit-flex;
+                display: flex;
+            }
+            
+            .row2 {
+                display: -webkit-flex;
+                display: flex;
+            }
+            
+            .column {
+                padding: 10px;
+                display: -webkit-flex;
+                display: flex;
+                flex-flow: row;
+                height: 300px;
+                width: 90%;
+            }
+            
+            .column2 {
+                padding: 10px;
+                display: -webkit-flex;
+                display: flex;
+                flex-flow: row;
+                height: 300px;
+                width: 90%;
+                position: relative;
+            }
+            
+            .text-block {
+                position: absolute;
+                padding-left: 120px;
+                bottom: 25px;
+                font-weight: bold;
+                font-size: 14px;
+                font-family: 'Courier New', Courier, monospace;
+                font-style: italic;
+                color: rgb(48, 38, 38);
+            }
+            
+            .text {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 18px;
+                font-style: italic;
+                color: rgb(12, 11, 11);
+                font-weight: bold;
+            }
+            
+            .colImg {
+                width: 75%;
+                height: 200px;
+            }
+            
+            .co1 {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+            }
+            
+            .midImg {
+                width: 75%;
+                height: 200px;
+            }
+            
+            .modal {
+                width: 100%;
+                height: 100%;
+                border: solid;
+                position: fixed;
+                z-index: 10;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: none;
+                left: 0;
+                top: 0;
+            }
+            
+            .modalContent {
+                border: solid rgb(189, 145, 125);
+                border-radius: 10px;
+                border-width: 12px;
+                background-color: cornsilk;
+                margin: 20% auto;
+                text-align-last: center;
+                width: 410px;
+                padding: 20px;
+                box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+            }
+            
+            h2 {
+                font-size: 2.5em;
+            }
+            
+            .modalText {
+                font-weight: bold;
+            }
+            
+            .close {
+                color: #fff;
+                float: right;
+                font: bold;
+                font-weight: 2em;
+                font-size: 30px;
+                color: #ccc;
+            }
+            
+            .close:hover,
+            .close:focus {
+                text-decoration: none;
+                cursor: pointer;
+                color: black;
+            }
+            
+            .footer {
+                /* background-color: #f1f1f1; */
+                padding: 5px;
+                text-align: center;
+                color: rgb(42, 37, 37);
+                font-size: 18px;
+                font-weight: 2em;
+            }
+            
+            .Img {
+                width: 50px;
+                height: 50px;
+                padding-top: 5px;
+            }
+            
+            .media {
+                width: 100%;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .Img:hover {
+                width: 70px;
+                height: 70px;
+                cursor: pointer;
+                padding-top: 1px;
+            }
+            /* Responsive layout*/
+            
+            @media (max-width: 600px) {
+                .row {
+                    -webkit-flex-direction: column;
+                    flex-direction: column;
+                }
+            }
+            
+            @media (max-width: 600px) {
+                .row2 {
+                    -webkit-flex-direction: column;
+                    flex-direction: column;
+                }
+            }
+            /* @media (max-width: 600px) {
+                .modal {
+                    -webkit-flex-direction: column;
+                    flex-direction: column;
+                }
+            } */

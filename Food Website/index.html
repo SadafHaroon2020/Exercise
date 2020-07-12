@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Restaurant</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- creating Modal -->
+    <!-- <button class="button" id="modalBtn">Click Here</button> -->
+    <div class="modal" id="mymodal">
+        <div class="modalContent">
+            <span class="close" id="closeBtn">&times;</span>
+            <h2>Now Serving</h2>
+            <p class="modalText">Dine-In in Most of Locations<br> Always available for<br> Curbside pickup,Contactless delivery<br> and catering
+            </p>
+
+        </div>
+    </div>
+
+    <div class="header">
+        <nav class="nav"> Food for your Heart</nav>
+        <a href="menuBar.html" class="items">Our Story</a>&nbsp;
+        <a href="menuBar.html" class="items">Menu</a>&nbsp;
+        <a href="menuBar.html" class="items">Locations</a>&nbsp;
+        <a href="menuBar.html" class="items">Catering</a>&nbsp;
+        <a href="menuBar.html" class="items">Contact us</a>&nbsp;
+
+    </div>
+
+    <div class="row">
+
+        <div class="column col1">
+            <img class="colImg" src="images/BBQ2.JPG" alt="" id="col1">
+            <p class="text" style="color: black;">Lorem ipsum dolor sit perferendis facere, enim repellendfacere, enim repellendus.</p>
+        </div>
+
+        <div class="column col2">
+            <img class="colImg" src="images/foodgif1.gif" alt="" id="col2">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit animi perferendis facere, enim repellendus.</p>
+        </div>
+        <div class="column col3">
+            <img class="colImg" src="images/salad2.JPG" alt="" id="col3">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit facere, enim repellend facere, enim repellendus.</p>
+        </div>
+    </div>
+    <div class="row2 midBox">
+        <div class="column2 ">
+            <img class="midImg" src="images/catering.gif">
+
+            <div class="text-block ">
+                <h2>Catering</h2>
+            </div>
+
+        </div>
+        <div class="column2 ">
+            <img class="midImg" src="images/group.JPG">
+
+            <div class="text-block ">
+                <h2>Group Order</h2>
+            </div>
+
+        </div>
+        <div class="column2">
+            <img class="midImg" src="images/curbside2.png">
+
+            <div class="text-block ">
+                <h2>Pickup</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="media">
+            <img src="images/fb.png" alt="" class="Img">
+            <img src="images/insta.png" alt="" class="Img">
+            <img src="images/twit.png" alt="" class="Img">
+            <img src="images/yt.png" alt="" class="Img">
+            <img src="images/tiktok.png" alt="" class="Img">
+        </div>
+        <p>Please Like,Share and Subscribe Us &nbsp;</p>&nbsp;
+        <a href="#" class="items">Privacy Policy</a>&nbsp;&nbsp;
+        <a href="#" class="items">Terms of use</a>&nbsp;&nbsp;
+        <a href="#" class="items">Donations</a>&nbsp;&nbsp;
+        <a href="#" class="items">FAQ</a>&nbsp;&nbsp;
+        <a href="#" class="items">Accessibility</a>&nbsp;&nbsp;
+
+
+    </div>
+    <script>
+        var modal = document.getElementById('mymodal');
+        var closeButton = document.getElementById('closeBtn');
+        closeButton.addEventListener('click', closeModal);
+
+        function openModal() {
+            modal.style.display = 'block';
+
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+        document.addEventListener("DOMContentLoaded", openModal);
+        // window.addEventListener('click', closeModal);
+    </script>
+</body>
+
+</html>
